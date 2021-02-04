@@ -1,4 +1,4 @@
-# Aplicativo pesquisa no YouTube - API do YouTube
+# Aplicativo de Pesquisa no YouTube - API do YouTube
 
 A new Flutter project.
 
