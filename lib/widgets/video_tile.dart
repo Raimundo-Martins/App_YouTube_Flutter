@@ -12,10 +12,17 @@ class VideoTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final blocProvider = BlocProvider.of<FavoriteBloc>(context);
+    final youtubeController = YoutubePlayerController(
+      initialVideoId: video.id,
+      flags: YoutubePlayerFlags(autoPlay: true, mute: false),
+    );
 
     return GestureDetector(
         onTap: () {
-          YoutubePlayerController(initialVideoId: video.id);
+          YoutubePlayer(
+            controller: youtubeController,
+            showVideoProgressIndicator: true,
+          );
         },
         child: Container(
           margin: EdgeInsets.symmetric(vertical: 4),
