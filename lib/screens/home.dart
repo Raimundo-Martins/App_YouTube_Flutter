@@ -1,11 +1,11 @@
 import 'package:bloc_pattern/bloc_pattern.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_youtube/blocs/favorite_bloc.dart';
-import 'package:flutter_youtube/blocs/videos_bloc.dart';
-import 'package:flutter_youtube/delegates/data_search.dart';
-import 'package:flutter_youtube/models/video.dart';
-import 'package:flutter_youtube/screens/favorites.dart';
-import 'package:flutter_youtube/widgets/video_tile.dart';
+import 'package:flutter_youtube_api/blocs/favorite_bloc.dart';
+import 'package:flutter_youtube_api/blocs/videos_bloc.dart';
+import 'package:flutter_youtube_api/delegates/data_search.dart';
+import 'package:flutter_youtube_api/models/video.dart';
+import 'package:flutter_youtube_api/screens/favorites.dart';
+import 'package:flutter_youtube_api/widgets/video_tile.dart';
 
 class Home extends StatelessWidget {
   @override

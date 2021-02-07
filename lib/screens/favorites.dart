@@ -1,8 +1,9 @@
 import 'package:bloc_pattern/bloc_pattern.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_youtube/blocs/favorite_bloc.dart';
-import 'package:flutter_youtube/models/video.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:flutter_youtube_api/api.dart';
+import 'package:flutter_youtube/flutter_youtube.dart';
+import 'package:flutter_youtube_api/blocs/favorite_bloc.dart';
+import 'package:flutter_youtube_api/models/video.dart';
 
 class Favorites extends StatelessWidget {
   @override
@@ -23,7 +24,10 @@ class Favorites extends StatelessWidget {
             children: snapshot.data.values.map((video) {
               return InkWell(
                 onTap: () {
-                  YoutubePlayerController(initialVideoId: video.id);
+                  FlutterYoutube.playYoutubeVideoById(
+                        apiKey: API_KEY,
+                        videoId: video.id
+                    );
                 },
                 onLongPress: () {
                   blocFavorite.toggleFavorite(video);

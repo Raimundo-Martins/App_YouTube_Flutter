@@ -1,8 +1,8 @@
 import 'package:bloc_pattern/bloc_pattern.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_youtube/blocs/favorite_bloc.dart';
-import 'package:flutter_youtube/blocs/videos_bloc.dart';
-import 'package:flutter_youtube/screens/home.dart';
+import 'package:flutter_youtube_api/blocs/favorite_bloc.dart';
+import 'package:flutter_youtube_api/blocs/videos_bloc.dart';
+import 'package:flutter_youtube_api/screens/home.dart';
 
 void main() {
   runApp(MyApp());

@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:flutter_youtube/models/video.dart';
+import 'package:flutter_youtube_api/models/video.dart';
 import 'package:http/http.dart' as http;
 
-const API_KEY = "Sua API aqui";
+const API_KEY = "Sua api aqui.";
 
 class Api {
   String _search;

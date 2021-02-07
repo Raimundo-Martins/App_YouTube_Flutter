@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:bloc_pattern/bloc_pattern.dart';
-import 'package:flutter_youtube/api.dart';
-import 'package:flutter_youtube/models/video.dart';
+import 'package:flutter_youtube_api/api.dart';
+import 'package:flutter_youtube_api/models/video.dart';
 
 class VideosBloc implements BlocBase {
   Api api;
